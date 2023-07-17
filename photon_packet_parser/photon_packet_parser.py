@@ -1,11 +1,11 @@
 import io
-from message_type import MessageType
-from command_type import CommandType
-from segmented_package import SegmentedPackage
-from protocol16_deserializer import Protocol16Deserializer
-from byte_reader import ByteReader
-from crc_calculator import CrcCalculator
-from number_serializer import NumberSerializer
+from photon_packet_parser.message_type import MessageType
+from photon_packet_parser.command_type import CommandType
+from photon_packet_parser.segmented_package import SegmentedPackage
+from photon_packet_parser.protocol16_deserializer import Protocol16Deserializer
+from photon_packet_parser.byte_reader import ByteReader
+from photon_packet_parser.crc_calculator import CrcCalculator
+from photon_packet_parser.number_serializer import NumberSerializer
 
 COMMAND_HEADER_LENGTH = 12
 PHOTON_HEADER_LENGTH = 12
