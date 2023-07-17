@@ -15,7 +15,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="photon-packet-parser",
-    version="0.1.0",
+    version="0.1.2",
     description="A package to parse Photon Protocol packets in Python",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -1,12 +1,11 @@
 import io
 import struct
 import sys
-from protocol16_type import Protocol16Type
-from operation_request import OperationRequest
-from operation_response import OperationResponse
-from event_data import EventData
+from photon_packet_parser.protocol16_type import Protocol16Type
+from photon_packet_parser.operation_request import OperationRequest
+from photon_packet_parser.operation_response import OperationResponse
+from photon_packet_parser.event_data import EventData
 
-# BUG When parsing numbers
 class Protocol16Deserializer:
     
     @staticmethod
