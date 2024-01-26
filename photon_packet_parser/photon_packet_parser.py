@@ -93,7 +93,7 @@ class PhotonPacketParser:
             self.on_request(request_data)
         elif message_type == MessageType.OperationResponse.value:
             response_data = Protocol16Deserializer.deserialize_operation_response(payload)
-            self.on_request(response_data)
+            self.on_response(response_data)
         elif message_type == MessageType.Event.value:
             event_data = Protocol16Deserializer.deserialize_event_data(payload)
             self.on_event(event_data)
